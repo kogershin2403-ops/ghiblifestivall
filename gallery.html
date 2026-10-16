@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Studio Ghibli әлеміне арналған бейресми оқу жобасы. 2027 жылғы 7 шілде. Музыка, галерея және естелік билеттер.">
+    <meta name="theme-color" content="#102923">
+    <title>Музыка және галерея · Ghibli — музыка мен сиқыр</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/app.js" defer></script>
+</head>
+<body>
+<header id="header"></header>
+<main id="main">
+    <div class="wrap page-head">
+        <div class="eyebrow">Естеліктер жинағы</div>
+        <h1>Әуенге айналған көріністер</h1>
+        <p>Суретті басыңыз: аудио осы бетте ойнатылады. Терезені жапқанда музыка тоқтайды.</p>
+    </div>
+    <section class="section wrap" style="padding-top:15px">
+        <div class="filters" aria-label="Галерея сүзгілері">
+            <button class="active" data-filter="all" aria-pressed="true">Барлық хикаялар</button>
+            <button data-filter="howl" aria-pressed="false">Хаулдың жылжымалы қамалы</button>
+            <button data-filter="other" aria-pressed="false">Басқа әлемдер</button>
+        </div>
+        <div class="cards" id="gallery"></div>
+    </section>
+</main>
+<footer id="footer"></footer>
+<noscript><p>Кері санақ, музыка, тіркелу және билеттер үшін браузерде JavaScript қосыңыз.</p></noscript>
+</body>
+</html>

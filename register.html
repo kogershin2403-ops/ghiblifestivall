@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Studio Ghibli әлеміне арналған бейресми оқу жобасы. 2027 жылғы 7 шілде. Музыка, галерея және естелік билеттер.">
+    <meta name="theme-color" content="#102923">
+    <title>Тіркелу · Ghibli — музыка мен сиқыр</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/app.js" defer></script>
+</head>
+<body>
+<header id="header"></header>
+<main id="main">
+    <div class="wrap form-layout">
+        <div class="form-art"><div>
+            <div class="eyebrow">Сіздің шағын саяхатыңыз</div>
+            <h2>Ертегіге апарар есік<br>ашық тұр.</h2>
+            <p>07 шілде 2027 · Ghibli — музыка мен сиқыр</p></div>
+        </div>
+        <section class="form-panel">
+            <div class="eyebrow">Алғашқы қадам</div>
+            <h1 style="font-size:43px">Тіркелгі ашу</h1>
+            <p class="notice">Оқу үлгісі. Сынақ деректерін және бөлек құпиясөз қолданыңыз. Тіркелгі тек осы браузерде сақталады.</p>
+            <form id="auth-form" data-mode="register">
+                <label for="name">Есіміңіз</label>
+                <input id="name" name="name" required maxlength="60" autocomplete="nickname" placeholder="Мысалы, Софи">
+                <label for="email">Электрондық пошта</label>
+                <input id="email" name="email" type="email" required maxlength="150" autocomplete="email" placeholder="sophie@example.com">
+                <label for="password">Құпиясөз (кемінде 8 таңба)</label>
+                <input id="password" name="password" type="password" required minlength="8" maxlength="128" autocomplete="new-password">
+                <label for="confirm">Құпиясөзді қайталаңыз</label>
+                <input id="confirm" name="confirm" type="password" required minlength="8" maxlength="128" autocomplete="new-password">
+                <label class="check">
+                    <input type="checkbox" required name="terms">
+                    <span>Сайттың демонстрациялық сипатын түсінемін және қабылдаймын: <a href="rules.html">ережелер мен шарттарды</a>.</span></label>
+                <button class="primary" type="submit">Тіркелу ↗</button>
+                <p class="status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+            <p>Тіркелгіңіз бар ма? <a href="login.html">Кіру →</a></p>
+        </section>
+    </div>
+</main>
+<footer id="footer"></footer>
+<noscript><p>Кері санақ, музыка, тіркелу және билеттер үшін браузерде JavaScript қосыңыз.</p></noscript>
+</body>
+</html>
